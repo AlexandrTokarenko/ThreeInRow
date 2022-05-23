@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #899cf2;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.treeinrow.controllers.StartMenuController2">
+    <center>
+       <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <Canvas fx:id="canvas" height="245.0" layoutY="7.0" width="309.0" />
+           <Label layoutX="236.0" layoutY="101.0" text="Виберіть режим гри">
+               <font>
+                   <Font name="Century Schoolbook Bold" size="30.0" />
+               </font>
+           </Label>
+           <Button fx:id="button" layoutX="344.0" layoutY="364.0" mnemonicParsing="false" onAction="#click" style="-fx-background-color: #f1dda1;" text="Старт">
+             <font>
+                <Font name="Century Schoolbook" size="26.0" />
+             </font>
+          </Button>
+           <RadioButton fx:id="firstChoice" layoutX="222.0" layoutY="186.0" mnemonicParsing="false" onAction="#clickingOnSelect" text="Обмежена кількість кроків">
+               <toggleGroup>
+                   <ToggleGroup fx:id="group" />
+               </toggleGroup>
+               <font>
+                   <Font name="Century" size="22.0" />
+               </font>
+           </RadioButton>
+           <RadioButton fx:id="secondСhoice" layoutX="211.0" layoutY="295.0" mnemonicParsing="false" onAction="#clickingOnSelect2" text="Необмежену кількість кроків" toggleGroup="$group">
+               <font>
+                   <Font name="Century" size="22.0" />
+               </font>
+           </RadioButton>
+       </Pane>
+    </center>
+</BorderPane>
